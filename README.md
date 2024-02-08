@@ -1,5 +1,9 @@
 IP Webcam 어플리케이션을 활용한 얼굴인식 모델
 
+파이썬 구버전 필요 7,8,9
+패키지 설치
+pip install opencv-python opencv-contrib-python dlib face_recognition pyautogui
+
 1. knowns 폴서 생성
 2. webcam app 실행
    
