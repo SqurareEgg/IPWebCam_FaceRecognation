@@ -40,7 +40,6 @@ class FaceRecog():
                     face_encoding = face_encodings[0]
                     self.known_face_encodings.append(face_encoding)
 
-        # Initialize some variables
         self.face_locations = []
         self.face_encodings = []
         self.face_names = []
@@ -53,23 +52,22 @@ class FaceRecog():
         frame = self.camera.get_frame()
         rgb_small_frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
 
-
         if self.process_this_frame:
             self.face_locations = face_recognition.face_locations(rgb_small_frame)
             self.face_encodings = face_recognition.face_encodings(rgb_small_frame, self.face_locations)
 
-
             self.face_names = []
             for face_encoding in self.face_encodings:
                 distances = face_recognition.face_distance(self.known_face_encodings, face_encoding)
-                min_value = min(distances)
+                # min을 계산하기 전에 distances 리스트가 비어있지 않은지 확인
+                if distances:
+                    min_value = min(distances)
+                    name = "Unknown"
+                    if min_value < 0.6:
+                        index = np.argmin(distances)
+                        name = self.known_face_names[index]
 
-                name = "Unknown"
-                if min_value < 0.6:
-                    index = np.argmin(distances)
-                    name = self.known_face_names[index]
-
-                self.face_names.append(name)
+                    self.face_names.append(name)
 
         self.process_this_frame = not self.process_this_frame
 
@@ -103,10 +101,8 @@ if __name__ == '__main__':
         cv2.imshow("Frame", frame)
         key = cv2.waitKey(1) & 0xFF
 
-        # if the `q` key was pressed, break from the loop
         if key == ord("q"):
             break
 
-    # do a bit of cleanup
     cv2.destroyAllWindows()
     print('finish')
