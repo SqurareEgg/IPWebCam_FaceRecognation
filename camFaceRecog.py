@@ -60,7 +60,7 @@ class FaceRecog():
             for face_encoding in self.face_encodings:
                 distances = face_recognition.face_distance(self.known_face_encodings, face_encoding)
                 # min을 계산하기 전에 distances 리스트가 비어있지 않은지 확인
-                if distances:
+                if len(distances) > 0:
                     min_value = min(distances)
                     name = "Unknown"
                     if min_value < 0.6:
