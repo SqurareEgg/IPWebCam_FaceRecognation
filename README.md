@@ -53,3 +53,25 @@ pip install opencv-python opencv-contrib-python dlib face_recognition pyautogui
    
    ![KakaoTalk_20240208_141853486](https://github.com/SqurareEgg/IPWebCam_FaceRecognation/assets/148935595/ab7ff96d-e907-45bd-876d-3612a6cc6df8)
    ![image](https://github.com/SqurareEgg/IPWebCam_FaceRecognation/assets/148935595/fe0aa825-a0b9-48fc-9cd1-7fe22c0f4790)
+
+---
+
+<img width="1280" height="720" alt="슬라이드1" src="https://github.com/user-attachments/assets/72b4ae90-5553-41d5-8fe0-0faa8d2ef9da" />
+
+<img width="1280" height="720" alt="슬라이드2" src="https://github.com/user-attachments/assets/0c70687b-ddc6-482e-9328-d5562fef890d" />
+
+<img width="1280" height="720" alt="슬라이드3" src="https://github.com/user-attachments/assets/4ea4479d-d753-4dff-a8a1-3e6989e768ad" />
+
+<img width="1280" height="720" alt="슬라이드4" src="https://github.com/user-attachments/assets/3daf1227-41bc-4848-8450-338488ad407c" />
+
+<img width="1280" height="720" alt="슬라이드5" src="https://github.com/user-attachments/assets/4f01e302-e13f-489a-bdc7-e0615a49fada" />
+
+<img width="1280" height="720" alt="슬라이드6" src="https://github.com/user-attachments/assets/f89760d3-5e65-4ef8-a449-df94e2800cc2" />
+
+<img width="1280" height="720" alt="슬라이드7" src="https://github.com/user-attachments/assets/d3bfaa55-627b-4c35-857e-2a05ef28deba" />
+
+<img width="1280" height="720" alt="슬라이드8" src="https://github.com/user-attachments/assets/78a8c373-f695-4837-855c-5b24a6cb0285" />
+
+<img width="1280" height="720" alt="슬라이드9" src="https://github.com/user-attachments/assets/10be7f29-8985-402d-91dc-fa3ee11e62c9" />
+
+<img width="1280" height="720" alt="슬라이드10" src="https://github.com/user-attachments/assets/e74c63d6-5aa0-466f-8566-9c3ab24d0817" />
